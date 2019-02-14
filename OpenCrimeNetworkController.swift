@@ -1,30 +1,46 @@
-//
-//  OpenCrimeNetworkController.swift
-//  Safer_City
-//
-//  Created by Jesus Almazan on 1/23/19.
-//  Copyright © 2019 Justino Almazan. All rights reserved.
-//
+import UIKit
 
-import Foundation
+struct Crimes: Decodable {
+    let id: Int?
+    let caseNumber: String?
+    let data: String?
+    let block: String?
+    let IUCR: String?
+    let primaryType: String?
+    let description: String?
+    let locationDescription: String?
+    let arrest: Bool?
+    let domestic: Bool?
+    let district: String?
+    let ward: Int?
+    let communityArea: String?
+    let fbiCode: String?
+    let xCoordinate: Int?
+    let yCoordinate: Int?
+    let year: Int?
+    let updateOn: String?
+    let latitude: Double?
+    let longitude: Double?
+    let Location: String?
+}
 
 final class OpenCrimeNetworkController: NetworkController{
-    func fetchCrimeData(crime: String, completionHandler: @escaping (CrimeData?, NetworkControllerError?) -> Void) {
-        let session = URLSession(configuration: URLSessionConfiguration.default, delegate: nil, delegateQueue: OperationQueue.main)
-        let endpoint = "https://data.cityofchicago.org/resource/crimes.json"
-        //this is the url we will use to access crime data
+    func apiAccess(){
+        let jsonUrlString = "https://data.cityofchicago.org/resource/crimes.json"
+        guard let url = URL(string: jsonUrlString) else {return}
         
-        let safeURLString = endpoint.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed)
-        
-        guard let endpointURL = URL(string: safeURLString!) else{
-            completionHandler(nil, NetworkControllerError.invalidURL(safeURLString!))
-            return
-        }
-        let dataTask = session.dataTask(with: endpointURL) { (data, response, error) in
-            guard error == nil else{
-                completionHandler(nil, NetworkControllerError.forwarded(error!))
-                return
-                //unwrapping error
+        URLSession.shared.dataTask(with: url) { (data, response, err) in
+            //check error
+            //check ok status 200
+            
+            guard let data = data else { return }
+            
+            do{
+                let crime = try
+                    JSONDecoder().decode(Crimes.self, from: data)
+                print("ID:", crimes.id, "Crime:", crimes.primaryType)
+            }catch let jsonErr{
+                print("Error serializing json:", jsonErr)
             }
         }
     }
