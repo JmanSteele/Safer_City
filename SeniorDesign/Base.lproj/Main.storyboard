@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Map Screen-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="MapScreen" customModule="SeniorDesign" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="ghA-Na-yGf">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="729"/>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="U4e-nk-iBN"/>
+                                </connections>
+                            </mapView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Pin" translatesAutoresizingMaskIntoConstraints="NO" id="tq3-ui-BJr">
+                                <rect key="frame" x="157.66666666666666" y="366" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="hkm-ss-YVb"/>
+                                    <constraint firstAttribute="width" constant="60" id="juk-Zr-R3R"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cRb-jm-jBn">
+                                <rect key="frame" x="0.0" y="728" width="375" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="lUX-9X-Jtg"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pi3-oo-Dcs">
+                                <rect key="frame" x="284" y="596" width="54" height="40"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="23"/>
+                                <state key="normal" title="Start">
+                                    <color key="titleColor" red="1" green="0.0" blue="0.03624573524" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="startButtonTapped:" destination="BYZ-38-t0r" eventType="touchDown" id="ocd-Qu-14d"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IX5-EG-EVx">
+                                <rect key="frame" x="281" y="669" width="61" height="51"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Crimes">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="titleShadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="crimesButtonTapped:" destination="BYZ-38-t0r" eventType="touchDown" id="OxM-mY-GbG"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="cRb-jm-jBn" secondAttribute="trailing" id="17I-PV-7lN"/>
+                            <constraint firstItem="Pi3-oo-Dcs" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="552" id="4OE-lq-bDb"/>
+                            <constraint firstItem="cRb-jm-jBn" firstAttribute="top" secondItem="IX5-EG-EVx" secondAttribute="bottom" constant="8" id="4dS-aj-2Bp"/>
+                            <constraint firstItem="tq3-ui-BJr" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-10" id="Cq8-ge-fa2"/>
+                            <constraint firstItem="IX5-EG-EVx" firstAttribute="top" secondItem="Pi3-oo-Dcs" secondAttribute="bottom" constant="33" id="CvT-hi-g8G"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Pi3-oo-Dcs" secondAttribute="trailing" constant="37" id="INt-Ie-YJt"/>
+                            <constraint firstAttribute="trailing" secondItem="ghA-Na-yGf" secondAttribute="trailing" id="LO8-1X-Wyb"/>
+                            <constraint firstItem="tq3-ui-BJr" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="S5I-GY-Xvu"/>
+                            <constraint firstItem="cRb-jm-jBn" firstAttribute="top" secondItem="Pi3-oo-Dcs" secondAttribute="bottom" constant="92" id="VkU-R8-M3k"/>
+                            <constraint firstItem="IX5-EG-EVx" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="281" id="YYV-LB-NeX"/>
+                            <constraint firstItem="Pi3-oo-Dcs" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="284" id="adn-EH-6bG"/>
+                            <constraint firstItem="cRb-jm-jBn" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="bWc-Jb-YJY"/>
+                            <constraint firstItem="ghA-Na-yGf" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="jd4-VO-NoL"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="IX5-EG-EVx" secondAttribute="trailing" constant="33" id="pHY-6O-Bbj"/>
+                            <constraint firstItem="ghA-Na-yGf" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="xt5-Wa-ZAs"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="cRb-jm-jBn" secondAttribute="bottom" id="yel-P6-a0L"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="ghA-Na-yGf" secondAttribute="bottom" constant="49" id="zoi-rq-M1L"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="Crimes" destination="IX5-EG-EVx" id="B1u-W3-C8e"/>
+                        <outlet property="addressLabel" destination="cRb-jm-jBn" id="2V5-Nl-i1o"/>
+                        <outlet property="mapView" destination="ghA-Na-yGf" id="hur-Gb-E2n"/>
+                        <outlet property="startButton" destination="Pi3-oo-Dcs" id="HGV-z9-nst"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="53.600000000000001" y="22.906403940886701"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Pin" width="128" height="128"/>
+    </resources>
+</document>
