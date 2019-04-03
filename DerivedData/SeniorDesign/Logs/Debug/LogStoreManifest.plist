@@ -1,0 +1,388 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>logFormatVersion</key>
+	<integer>9</integer>
+	<key>logs</key>
+	<dict>
+		<key>24067EA3-39D8-4DE0-80B1-DB1D710AE393</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>24067EA3-39D8-4DE0-80B1-DB1D710AE393.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>S</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>SeniorDesign project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>SeniorDesign</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Debug SeniorDesign</string>
+			<key>timeStartedRecording</key>
+			<real>575657510.85993195</real>
+			<key>timeStoppedRecording</key>
+			<real>575658283.27944303</real>
+			<key>title</key>
+			<string>Debug SeniorDesign</string>
+			<key>uniqueIdentifier</key>
+			<string>24067EA3-39D8-4DE0-80B1-DB1D710AE393</string>
+		</dict>
+		<key>68CB9041-9BD4-484E-BC7C-2071A460BDE1</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>68CB9041-9BD4-484E-BC7C-2071A460BDE1.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>S</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>SeniorDesign project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>SeniorDesign</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Debug SeniorDesign</string>
+			<key>timeStartedRecording</key>
+			<real>575657337.407444</real>
+			<key>timeStoppedRecording</key>
+			<real>575657509.20535505</real>
+			<key>title</key>
+			<string>Debug SeniorDesign</string>
+			<key>uniqueIdentifier</key>
+			<string>68CB9041-9BD4-484E-BC7C-2071A460BDE1</string>
+		</dict>
+		<key>74070CAA-8F6C-4A81-9643-139F434EBCB0</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>74070CAA-8F6C-4A81-9643-139F434EBCB0.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>S</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>SeniorDesign project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>SeniorDesign</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Debug SeniorDesign</string>
+			<key>timeStartedRecording</key>
+			<real>576006209.71415102</real>
+			<key>timeStoppedRecording</key>
+			<real>576006258.62595296</real>
+			<key>title</key>
+			<string>Debug SeniorDesign</string>
+			<key>uniqueIdentifier</key>
+			<string>74070CAA-8F6C-4A81-9643-139F434EBCB0</string>
+		</dict>
+		<key>9A4CD0FD-7ED0-4205-A8EA-25DE2767FD47</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>9A4CD0FD-7ED0-4205-A8EA-25DE2767FD47.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>S</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>SeniorDesign project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>SeniorDesign</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Debug SeniorDesign</string>
+			<key>timeStartedRecording</key>
+			<real>575751709.18670499</real>
+			<key>timeStoppedRecording</key>
+			<real>575752295.30552006</real>
+			<key>title</key>
+			<string>Debug SeniorDesign</string>
+			<key>uniqueIdentifier</key>
+			<string>9A4CD0FD-7ED0-4205-A8EA-25DE2767FD47</string>
+		</dict>
+		<key>AF312F7E-EB9F-4E9F-9598-21EB68BF127D</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>AF312F7E-EB9F-4E9F-9598-21EB68BF127D.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>S</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>SeniorDesign project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>SeniorDesign</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Debug SeniorDesign</string>
+			<key>timeStartedRecording</key>
+			<real>575648037.99914396</real>
+			<key>timeStoppedRecording</key>
+			<real>575648281.89005995</real>
+			<key>title</key>
+			<string>Debug SeniorDesign</string>
+			<key>uniqueIdentifier</key>
+			<string>AF312F7E-EB9F-4E9F-9598-21EB68BF127D</string>
+		</dict>
+		<key>B82A2436-C250-4425-9285-113496EDFB1F</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>B82A2436-C250-4425-9285-113496EDFB1F.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>S</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>SeniorDesign project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>SeniorDesign</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Debug SeniorDesign</string>
+			<key>timeStartedRecording</key>
+			<real>575750756.84806299</real>
+			<key>timeStoppedRecording</key>
+			<real>575751005.54043901</real>
+			<key>title</key>
+			<string>Debug SeniorDesign</string>
+			<key>uniqueIdentifier</key>
+			<string>B82A2436-C250-4425-9285-113496EDFB1F</string>
+		</dict>
+		<key>C1BE2E9F-2682-4440-A3E9-1FABCAC0B1CA</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>C1BE2E9F-2682-4440-A3E9-1FABCAC0B1CA.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>S</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>SeniorDesign project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>SeniorDesign</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Debug SeniorDesign</string>
+			<key>timeStartedRecording</key>
+			<real>575648283.73649395</real>
+			<key>timeStoppedRecording</key>
+			<real>575648633.947492</real>
+			<key>title</key>
+			<string>Debug SeniorDesign</string>
+			<key>uniqueIdentifier</key>
+			<string>C1BE2E9F-2682-4440-A3E9-1FABCAC0B1CA</string>
+		</dict>
+		<key>CAF9A440-D0DC-4EA9-9750-0A373047E9A1</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>CAF9A440-D0DC-4EA9-9750-0A373047E9A1.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>S</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>SeniorDesign project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>SeniorDesign</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Debug SeniorDesign</string>
+			<key>timeStartedRecording</key>
+			<real>576006275.77503502</real>
+			<key>timeStoppedRecording</key>
+			<real>576006472.22507501</real>
+			<key>title</key>
+			<string>Debug SeniorDesign</string>
+			<key>uniqueIdentifier</key>
+			<string>CAF9A440-D0DC-4EA9-9750-0A373047E9A1</string>
+		</dict>
+		<key>DA37D1E7-918C-4494-865C-58D47887F197</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>DA37D1E7-918C-4494-865C-58D47887F197.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>S</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>SeniorDesign project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>SeniorDesign</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Debug SeniorDesign</string>
+			<key>timeStartedRecording</key>
+			<real>575646963.86068797</real>
+			<key>timeStoppedRecording</key>
+			<real>575647896.10090303</real>
+			<key>title</key>
+			<string>Debug SeniorDesign</string>
+			<key>uniqueIdentifier</key>
+			<string>DA37D1E7-918C-4494-865C-58D47887F197</string>
+		</dict>
+		<key>E3E65471-DC83-4F6F-B40E-94876C9712BF</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>E3E65471-DC83-4F6F-B40E-94876C9712BF.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>S</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>SeniorDesign project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>SeniorDesign</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Debug SeniorDesign</string>
+			<key>timeStartedRecording</key>
+			<real>575834831.771258</real>
+			<key>timeStoppedRecording</key>
+			<real>576006207.34417999</real>
+			<key>title</key>
+			<string>Debug SeniorDesign</string>
+			<key>uniqueIdentifier</key>
+			<string>E3E65471-DC83-4F6F-B40E-94876C9712BF</string>
+		</dict>
+		<key>E69735D8-109C-4650-81AB-98E5B4BDA216</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>E69735D8-109C-4650-81AB-98E5B4BDA216.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>S</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>SeniorDesign project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>SeniorDesign</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Debug SeniorDesign</string>
+			<key>timeStartedRecording</key>
+			<real>576006491.92837906</real>
+			<key>timeStoppedRecording</key>
+			<real>576006905.38430905</real>
+			<key>title</key>
+			<string>Debug SeniorDesign</string>
+			<key>uniqueIdentifier</key>
+			<string>E69735D8-109C-4650-81AB-98E5B4BDA216</string>
+		</dict>
+		<key>EB9A401D-93B4-4E35-81B2-004D54338541</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>EB9A401D-93B4-4E35-81B2-004D54338541.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>S</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>SeniorDesign project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>SeniorDesign</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Debug SeniorDesign</string>
+			<key>timeStartedRecording</key>
+			<real>575658284.78484094</real>
+			<key>timeStoppedRecording</key>
+			<real>575750756.73626697</real>
+			<key>title</key>
+			<string>Debug SeniorDesign</string>
+			<key>uniqueIdentifier</key>
+			<string>EB9A401D-93B4-4E35-81B2-004D54338541</string>
+		</dict>
+		<key>EC91ABB1-C63B-46DE-BE1C-46D298AA58A2</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>EC91ABB1-C63B-46DE-BE1C-46D298AA58A2.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>S</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>SeniorDesign project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>SeniorDesign</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Debug SeniorDesign</string>
+			<key>timeStartedRecording</key>
+			<real>575751164.85225403</real>
+			<key>timeStoppedRecording</key>
+			<real>575751704.95082998</real>
+			<key>title</key>
+			<string>Debug SeniorDesign</string>
+			<key>uniqueIdentifier</key>
+			<string>EC91ABB1-C63B-46DE-BE1C-46D298AA58A2</string>
+		</dict>
+	</dict>
+</dict>
+</plist>

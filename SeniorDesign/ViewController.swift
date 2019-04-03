@@ -160,10 +160,12 @@ class MapScreen: UIViewController {
     }
     
     @IBAction func crimesButtonTapped(_ sender: UIButton) {
+        var i: Int=0
         for x in longarray{
-            for y in latiarray{
-                crimes(latitude: x, longitude: y)
-            }
+            print (x, " ", latiarray[i])
+            
+            crimes(latitude: x, longitude: latiarray[i])
+            i = i+1
         }
     }
     

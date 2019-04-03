@@ -27,6 +27,7 @@ struct Description: Decodable {
 var longarray: [Double] = []
 var latiarray: [Double] = []
 var Types: [String] = []
+var a: Int = 1
 
 class OpenCrimeNetworkController{
     func apiAccess(){
@@ -75,7 +76,7 @@ class OpenCrimeNetworkController{
                     
                     
                     
-                    if(year2 >= 2018){
+                    if(year2 >= year2-1){
                         if( check == 1){
                             lati = (latitude as NSString).doubleValue
                             long = (longitude as NSString).doubleValue

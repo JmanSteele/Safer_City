@@ -1,0 +1,533 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>logFormatVersion</key>
+	<integer>9</integer>
+	<key>logs</key>
+	<dict>
+		<key>01312231-2DE1-4393-B357-FB4AB9DEC6AA</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>01312231-2DE1-4393-B357-FB4AB9DEC6AA.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>S</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>SeniorDesign project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>SeniorDesign</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build SeniorDesign</string>
+			<key>timeStartedRecording</key>
+			<real>575751143.421839</real>
+			<key>timeStoppedRecording</key>
+			<real>575751164.89165294</real>
+			<key>title</key>
+			<string>Build SeniorDesign</string>
+			<key>uniqueIdentifier</key>
+			<string>01312231-2DE1-4393-B357-FB4AB9DEC6AA</string>
+		</dict>
+		<key>290E16A6-58CF-4C25-ABBC-2198ADFDC762</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>290E16A6-58CF-4C25-ABBC-2198ADFDC762.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>S</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>SeniorDesign project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>SeniorDesign</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build SeniorDesign</string>
+			<key>timeStartedRecording</key>
+			<real>575657336.99052501</real>
+			<key>timeStoppedRecording</key>
+			<real>575657337.42533302</real>
+			<key>title</key>
+			<string>Build SeniorDesign</string>
+			<key>uniqueIdentifier</key>
+			<string>290E16A6-58CF-4C25-ABBC-2198ADFDC762</string>
+		</dict>
+		<key>591491C7-D6F6-4ED3-B631-D5F95E3CC488</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>591491C7-D6F6-4ED3-B631-D5F95E3CC488.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>S</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>SeniorDesign project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>SeniorDesign</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build SeniorDesign</string>
+			<key>timeStartedRecording</key>
+			<real>575646963.59161401</real>
+			<key>timeStoppedRecording</key>
+			<real>575646963.93977201</real>
+			<key>title</key>
+			<string>Build SeniorDesign</string>
+			<key>uniqueIdentifier</key>
+			<string>591491C7-D6F6-4ED3-B631-D5F95E3CC488</string>
+		</dict>
+		<key>5E70E340-C3B5-468C-AC3F-0F5FE909008B</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>5E70E340-C3B5-468C-AC3F-0F5FE909008B.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>S</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>SeniorDesign project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>SeniorDesign</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build SeniorDesign</string>
+			<key>timeStartedRecording</key>
+			<real>575646675.95605505</real>
+			<key>timeStoppedRecording</key>
+			<real>575646691.52828896</real>
+			<key>title</key>
+			<string>Build SeniorDesign</string>
+			<key>uniqueIdentifier</key>
+			<string>5E70E340-C3B5-468C-AC3F-0F5FE909008B</string>
+		</dict>
+		<key>60ADBCD3-AD6A-47D7-923F-ADD53F9599F3</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>60ADBCD3-AD6A-47D7-923F-ADD53F9599F3.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>S</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>SeniorDesign project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>SeniorDesign</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build SeniorDesign</string>
+			<key>timeStartedRecording</key>
+			<real>576006905.14706397</real>
+			<key>timeStoppedRecording</key>
+			<real>576006910.73320496</real>
+			<key>title</key>
+			<string>Build SeniorDesign</string>
+			<key>uniqueIdentifier</key>
+			<string>60ADBCD3-AD6A-47D7-923F-ADD53F9599F3</string>
+		</dict>
+		<key>60C2DA95-6444-4CE4-8E5B-DE903C14BF70</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>60C2DA95-6444-4CE4-8E5B-DE903C14BF70.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>S</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>SeniorDesign project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>SeniorDesign</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build SeniorDesign</string>
+			<key>timeStartedRecording</key>
+			<real>575647895.49884999</real>
+			<key>timeStoppedRecording</key>
+			<real>575647895.94664097</real>
+			<key>title</key>
+			<string>Build SeniorDesign</string>
+			<key>uniqueIdentifier</key>
+			<string>60C2DA95-6444-4CE4-8E5B-DE903C14BF70</string>
+		</dict>
+		<key>6169E5E1-71B3-4892-ACA7-BB3B5EEA6314</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>6169E5E1-71B3-4892-ACA7-BB3B5EEA6314.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>S</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>SeniorDesign project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>SeniorDesign</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build SeniorDesign</string>
+			<key>timeStartedRecording</key>
+			<real>576006491.79172397</real>
+			<key>timeStoppedRecording</key>
+			<real>576006491.95121598</real>
+			<key>title</key>
+			<string>Build SeniorDesign</string>
+			<key>uniqueIdentifier</key>
+			<string>6169E5E1-71B3-4892-ACA7-BB3B5EEA6314</string>
+		</dict>
+		<key>62EB526D-CFDB-4169-9554-B20674CF2229</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>62EB526D-CFDB-4169-9554-B20674CF2229.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>S</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>SeniorDesign project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>SeniorDesign</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build SeniorDesign</string>
+			<key>timeStartedRecording</key>
+			<real>575751709.08593297</real>
+			<key>timeStoppedRecording</key>
+			<real>575751709.246948</real>
+			<key>title</key>
+			<string>Build SeniorDesign</string>
+			<key>uniqueIdentifier</key>
+			<string>62EB526D-CFDB-4169-9554-B20674CF2229</string>
+		</dict>
+		<key>795A1721-16E4-48D8-AEF2-831EF601A4AF</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>795A1721-16E4-48D8-AEF2-831EF601A4AF.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>S</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>SeniorDesign project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>SeniorDesign</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build SeniorDesign</string>
+			<key>timeStartedRecording</key>
+			<real>575750756.49831498</real>
+			<key>timeStoppedRecording</key>
+			<real>575750756.87403297</real>
+			<key>title</key>
+			<string>Build SeniorDesign</string>
+			<key>uniqueIdentifier</key>
+			<string>795A1721-16E4-48D8-AEF2-831EF601A4AF</string>
+		</dict>
+		<key>A46AB0AC-2F61-4CE4-AB66-C6974F860550</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>A46AB0AC-2F61-4CE4-AB66-C6974F860550.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>S</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>SeniorDesign project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>SeniorDesign</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build SeniorDesign</string>
+			<key>timeStartedRecording</key>
+			<real>575657510.59361506</real>
+			<key>timeStoppedRecording</key>
+			<real>575657510.87624896</real>
+			<key>title</key>
+			<string>Build SeniorDesign</string>
+			<key>uniqueIdentifier</key>
+			<string>A46AB0AC-2F61-4CE4-AB66-C6974F860550</string>
+		</dict>
+		<key>A4CD4A7E-3414-49A7-AF16-669FB5027E9F</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>A4CD4A7E-3414-49A7-AF16-669FB5027E9F.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>S</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>SeniorDesign project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>SeniorDesign</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build SeniorDesign</string>
+			<key>timeStartedRecording</key>
+			<real>576006275.73443699</real>
+			<key>timeStoppedRecording</key>
+			<real>576006275.91271305</real>
+			<key>title</key>
+			<string>Build SeniorDesign</string>
+			<key>uniqueIdentifier</key>
+			<string>A4CD4A7E-3414-49A7-AF16-669FB5027E9F</string>
+		</dict>
+		<key>A7A43A7A-C4AF-4351-A892-74E6211976C0</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>A7A43A7A-C4AF-4351-A892-74E6211976C0.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>S</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>SeniorDesign project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>SeniorDesign</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build SeniorDesign</string>
+			<key>timeStartedRecording</key>
+			<real>575648037.667261</real>
+			<key>timeStoppedRecording</key>
+			<real>575648038.01894295</real>
+			<key>title</key>
+			<string>Build SeniorDesign</string>
+			<key>uniqueIdentifier</key>
+			<string>A7A43A7A-C4AF-4351-A892-74E6211976C0</string>
+		</dict>
+		<key>B8EAA4C9-4E8C-4668-98D9-161E3F556B83</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>B8EAA4C9-4E8C-4668-98D9-161E3F556B83.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>S</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>SeniorDesign project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>SeniorDesign</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build SeniorDesign</string>
+			<key>timeStartedRecording</key>
+			<real>575834820.82800496</real>
+			<key>timeStoppedRecording</key>
+			<real>575834831.98557305</real>
+			<key>title</key>
+			<string>Build SeniorDesign</string>
+			<key>uniqueIdentifier</key>
+			<string>B8EAA4C9-4E8C-4668-98D9-161E3F556B83</string>
+		</dict>
+		<key>B92FD525-3E4E-4871-9420-8B87ED818707</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>B92FD525-3E4E-4871-9420-8B87ED818707.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>S</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>SeniorDesign project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>SeniorDesign</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build SeniorDesign</string>
+			<key>timeStartedRecording</key>
+			<real>575647830.94702303</real>
+			<key>timeStoppedRecording</key>
+			<real>575647831.27347898</real>
+			<key>title</key>
+			<string>Build SeniorDesign</string>
+			<key>uniqueIdentifier</key>
+			<string>B92FD525-3E4E-4871-9420-8B87ED818707</string>
+		</dict>
+		<key>C20513C6-A0E7-40BB-A7E1-D10539A2529E</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>C20513C6-A0E7-40BB-A7E1-D10539A2529E.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>S</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>SeniorDesign project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>SeniorDesign</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build SeniorDesign</string>
+			<key>timeStartedRecording</key>
+			<real>575658284.51628006</real>
+			<key>timeStoppedRecording</key>
+			<real>575658284.86668301</real>
+			<key>title</key>
+			<string>Build SeniorDesign</string>
+			<key>uniqueIdentifier</key>
+			<string>C20513C6-A0E7-40BB-A7E1-D10539A2529E</string>
+		</dict>
+		<key>C567C76E-7B61-41DB-BBDE-E06AE4CF75AA</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>C567C76E-7B61-41DB-BBDE-E06AE4CF75AA.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>S</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>SeniorDesign project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>SeniorDesign</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build SeniorDesign</string>
+			<key>timeStartedRecording</key>
+			<real>575648033.08937395</real>
+			<key>timeStoppedRecording</key>
+			<real>575648033.15958905</real>
+			<key>title</key>
+			<string>Build SeniorDesign</string>
+			<key>uniqueIdentifier</key>
+			<string>C567C76E-7B61-41DB-BBDE-E06AE4CF75AA</string>
+		</dict>
+		<key>E2673544-C372-4D93-A80E-0440499C334F</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>E2673544-C372-4D93-A80E-0440499C334F.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>S</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>SeniorDesign project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>SeniorDesign</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build SeniorDesign</string>
+			<key>timeStartedRecording</key>
+			<real>576006209.28267598</real>
+			<key>timeStoppedRecording</key>
+			<real>576006209.75741303</real>
+			<key>title</key>
+			<string>Build SeniorDesign</string>
+			<key>uniqueIdentifier</key>
+			<string>E2673544-C372-4D93-A80E-0440499C334F</string>
+		</dict>
+		<key>FA647DDC-902D-4774-A59D-5F0BBC820283</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>FA647DDC-902D-4774-A59D-5F0BBC820283.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>S</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>SeniorDesign project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>SeniorDesign</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build SeniorDesign</string>
+			<key>timeStartedRecording</key>
+			<real>575648283.58326697</real>
+			<key>timeStoppedRecording</key>
+			<real>575648283.75340796</real>
+			<key>title</key>
+			<string>Build SeniorDesign</string>
+			<key>uniqueIdentifier</key>
+			<string>FA647DDC-902D-4774-A59D-5F0BBC820283</string>
+		</dict>
+	</dict>
+</dict>
+</plist>
