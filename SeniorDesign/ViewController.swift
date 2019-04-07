@@ -3,13 +3,15 @@ import MapKit
 import CoreLocation
 
 class customPin: NSObject, MKAnnotation{
+    var title: String?
+    var subTitle: String?
     var coordinate: CLLocationCoordinate2D
     //var title: String?
     //var subTitle: String?
     
-    init(location:CLLocationCoordinate2D){
-        //self.title = Title
-        //self.subTitle = subTitle
+    init(title: String, subTitle: String, location:CLLocationCoordinate2D){
+        self.title = title
+        self.subTitle = subTitle
         self.coordinate = location
     }
 }
@@ -41,10 +43,15 @@ class MapScreen: UIViewController {
         open.apiAccess()
         
     }
-    func crimes(latitude: Double, longitude: Double){
+    func crimes(latitude: Double, longitude: Double, Types: String, crimeDates: String){
+        //var subtitle: String?
         let robery = CLLocationCoordinate2D(latitude: latitude, longitude: longitude)
-        let pin = customPin(location: robery)
+        let pin = customPin(title: Types, subTitle: crimeDates, location: robery)
         self.mapView.addAnnotation(pin)
+        self.mapView.delegate = self
+        
+        
+       // self.subtitle = subtitle
     }
     
 
@@ -162,9 +169,9 @@ class MapScreen: UIViewController {
     @IBAction func crimesButtonTapped(_ sender: UIButton) {
         var i: Int=0
         for x in longarray{
-            print (x, " ", latiarray[i])
+            print (x, " ", latiarray[i], Types[i])
             
-            crimes(latitude: x, longitude: latiarray[i])
+            crimes(latitude: x, longitude: latiarray[i], Types: Types[i], crimeDates: dates[i])
             i = i+1
         }
     }

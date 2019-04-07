@@ -4,6 +4,7 @@ provides-top-level:
 - "longarray"
 - "latiarray"
 - "Types"
+- "dates"
 - "a"
 - "OpenCrimeNetworkController"
 provides-nominal:
@@ -37,6 +38,7 @@ depends-top-level:
 - !private "URL"
 - !private "URLSession"
 - "a"
+- "dates"
 - "latiarray"
 - "longarray"
 - !private "print"
@@ -125,7 +127,7 @@ depends-member:
 - !private ["Se", "block"]
 - !private ["Se", "caseNumber"]
 - !private ["Se", "communityArea"]
-- !private ["Se", "data"]
+- !private ["Se", "date"]
 - !private ["Se", "descrip"]
 - !private ["Se", "district"]
 - !private ["Se", "domestic"]
@@ -154,7 +156,7 @@ depends-member:
 - ["12SeniorDesign11DescriptionV", "block"]
 - ["12SeniorDesign11DescriptionV", "caseNumber"]
 - ["12SeniorDesign11DescriptionV", "communityArea"]
-- ["12SeniorDesign11DescriptionV", "data"]
+- ["12SeniorDesign11DescriptionV", "date"]
 - ["12SeniorDesign11DescriptionV", "deinit"]
 - ["12SeniorDesign11DescriptionV", "descrip"]
 - ["12SeniorDesign11DescriptionV", "district"]
@@ -272,6 +274,7 @@ depends-member:
 - !private ["12SeniorDesign26OpenCrimeNetworkControllerC", "URL"]
 - !private ["12SeniorDesign26OpenCrimeNetworkControllerC", "URLSession"]
 - ["12SeniorDesign26OpenCrimeNetworkControllerC", "apiAccess"]
+- !private ["12SeniorDesign26OpenCrimeNetworkControllerC", "dates"]
 - ["12SeniorDesign26OpenCrimeNetworkControllerC", "init"]
 - !private ["12SeniorDesign26OpenCrimeNetworkControllerC", "latiarray"]
 - !private ["12SeniorDesign26OpenCrimeNetworkControllerC", "longarray"]
@@ -428,4 +431,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/MapKit.framework/Headers/MapKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "c45f4594f547004f8932a77397c5ec27"
+interface-hash: "805f6d1494aa1ca0cb163440d4f3a549"

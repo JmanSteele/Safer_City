@@ -4,7 +4,7 @@ import Foundation
 struct Description: Decodable {
     let id: Int
     let caseNumber: String
-    let data: String
+    let date: String
     let block: String
     let IUCR: String
     let primaryType: String
@@ -27,6 +27,7 @@ struct Description: Decodable {
 var longarray: [Double] = []
 var latiarray: [Double] = []
 var Types: [String] = []
+var dates: [String] = []
 var a: Int = 1
 
 class OpenCrimeNetworkController{
@@ -51,10 +52,11 @@ class OpenCrimeNetworkController{
                 }
                 
                 for dic in jsonArray{
+                   
                     var lati: Double
                     var long: Double
                     var check = 1
-                    
+                    //the guard lets help us make sure each set of data has the necessary variables otherwise we skip the variable
                     guard let primaryType = dic["primary_type"] as? String else{
                         check = 0
                         continue
@@ -68,9 +70,41 @@ class OpenCrimeNetworkController{
                         continue
                     }
                     
+                    guard let date = dic["date"] as? String else{
+                        check = 0
+                        continue
+                    }
+                    
                     guard let year = dic["year"] as? String else{
                         check = 0
                         continue
+                    }
+                    if primaryType == "CRIMINAL TRESPASS"{
+                        check = 0
+                    }
+                    if primaryType == "CRIMINAL DAMAGE"{
+                        check = 0
+                    }
+                    if primaryType == "NARCOTICS"{
+                        check = 0
+                    }
+                    if primaryType == "PROSTITUTION"{
+                        check = 0
+                    }
+                    if primaryType == "MOTOR VEHICLE THEFT"{
+                        check = 0
+                    }
+                    if primaryType == "INTERFERENCE WITH PUBLIC OFFICER"{
+                        check = 0
+                    }
+                    if primaryType == "NON-CRIMINAL"{
+                        check = 0
+                    }
+                    if primaryType == "GAMBLING"{
+                        check = 0
+                    }
+                    if primaryType == "LIQUOR LAW VIOLATION"{
+                        check = 0
                     }
                     let year2 = (year as NSString).intValue
                     
@@ -80,10 +114,12 @@ class OpenCrimeNetworkController{
                         if( check == 1){
                             lati = (latitude as NSString).doubleValue
                             long = (longitude as NSString).doubleValue
+                            
                         
                             Types.append(primaryType)
                             longarray.append(lati)
                             latiarray.append(long)
+                            dates.append(date)
                         }
                     }
                        // print(jsonResponse)

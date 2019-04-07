@@ -4,6 +4,7 @@ provides-top-level:
 - "longarray"
 - "latiarray"
 - "Types"
+- "a"
 - "OpenCrimeNetworkController"
 provides-nominal:
 - "12SeniorDesign11DescriptionV"
@@ -35,6 +36,7 @@ depends-top-level:
 - "Types"
 - !private "URL"
 - !private "URLSession"
+- "a"
 - "latiarray"
 - "longarray"
 - !private "print"
@@ -123,7 +125,7 @@ depends-member:
 - !private ["Se", "block"]
 - !private ["Se", "caseNumber"]
 - !private ["Se", "communityArea"]
-- !private ["Se", "data"]
+- !private ["Se", "date"]
 - !private ["Se", "descrip"]
 - !private ["Se", "district"]
 - !private ["Se", "domestic"]
@@ -152,7 +154,7 @@ depends-member:
 - ["12SeniorDesign11DescriptionV", "block"]
 - ["12SeniorDesign11DescriptionV", "caseNumber"]
 - ["12SeniorDesign11DescriptionV", "communityArea"]
-- ["12SeniorDesign11DescriptionV", "data"]
+- ["12SeniorDesign11DescriptionV", "date"]
 - ["12SeniorDesign11DescriptionV", "deinit"]
 - ["12SeniorDesign11DescriptionV", "descrip"]
 - ["12SeniorDesign11DescriptionV", "district"]
@@ -426,4 +428,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/MapKit.framework/Headers/MapKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "42a921cf849452c14914a546daf6825c"
+interface-hash: "74f827e19669e12d440ef2facdee129d"

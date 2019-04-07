@@ -235,6 +235,7 @@ SWIFT_CLASS("_TtC12SeniorDesign9MapScreen")
 
 SWIFT_CLASS("_TtC12SeniorDesign9customPin")
 @interface customPin : NSObject <MKAnnotation>
+@property (nonatomic, copy) NSString * _Nullable title;
 @property (nonatomic) CLLocationCoordinate2D coordinate;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_DEPRECATED_MSG("-init is unavailable");
