@@ -43,6 +43,7 @@ class MapScreen: UIViewController {
         //Do any additional setup after laoding the view, typically from a nib
         let open = OpenCrimeNetworkController()
         open.apiAccess()
+        open.apiAccess2()
         
     }
     func crimes(latitude: Double, longitude: Double, Types: String, crimeDates: String){
