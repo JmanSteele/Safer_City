@@ -106,6 +106,18 @@ class OpenCrimeNetworkController{
                     if primaryType == "LIQUOR LAW VIOLATION"{
                         check = 0
                     }
+                    if primaryType == "PUBLIC PEACE VIOLATION"{
+                        check = 0
+                    }
+                    if primaryType == "DECEPTIVE PRACTICE"{
+                        check = 0
+                    }
+                    if primaryType == "WEAPONS VIOLATION"{
+                        check = 0
+                    }
+                    if primaryType == "OTHER OFFENSE"{
+                        check = 0
+                    }
                     let year2 = (year as NSString).intValue
                     
                     

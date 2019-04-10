@@ -22,6 +22,7 @@ provides-dynamic-lookup:
 depends-top-level:
 - !private "+"
 - !private "/"
+- !private "=="
 - !private ">"
 - !private "??"
 - "AssignmentPrecedence"
@@ -298,6 +299,7 @@ depends-member:
 - !private ["12SeniorDesign15CrimeAnnotationC", "deinit"]
 - !private ["12SeniorDesign15CrimeAnnotationC", "identifier"]
 - !private ["12SeniorDesign15CrimeAnnotationC", "init"]
+- !private ["12SeniorDesign15CrimeAnnotationC", "title"]
 - ["s28CustomDebugStringConvertibleP", "CLGeocoder"]
 - !private ["s28CustomDebugStringConvertibleP", "CLLocation"]
 - !private ["s28CustomDebugStringConvertibleP", "CLLocationCoordinate2D"]

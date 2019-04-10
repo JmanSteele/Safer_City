@@ -55,6 +55,7 @@ class MapScreen: UIViewController {
         mapView.addAnnotation(crimePin)
         self.mapView.delegate = self
     }
+    //create images instead of using pins/markers
     func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
         var annotationView = MKAnnotationView()
         guard let annotation = annotation as? CrimeAnnotation else {return nil}
@@ -64,8 +65,37 @@ class MapScreen: UIViewController {
         } else{ annotationView = MKAnnotationView(annotation: annotation, reuseIdentifier: annotation.identifier)
             
         }
-        annotationView.image=UIImage(named: "Thief")
+        //change pins to thief image
+        if(annotation.title == "THEFT"){
+            annotationView.image=UIImage(named: "Thief")}
+        else if(annotation.title == "ASSAULT"){
+            annotationView.image=UIImage(named: "assaulting")}
+        else if(annotation.title == "BATTERY"){
+            annotationView.image=UIImage(named: "battery")}
+        else if(annotation.title=="HOMICIDE"){
+            annotationView.image=UIImage(named: "homicide")
+        }
+        else if(annotation.title=="ROBBERY"){
+            annotationView.image=UIImage(named: "robbery")
+        }
+        else if(annotation.title=="OFFENSE INVOLVING CHILDREN"){
+            annotationView.image=UIImage(named: "offensekids")
+        }
+        else if(annotation.title=="CRIM SEXUAL ASSAULT"){
+            annotationView.image=UIImage(named: "sexassault")
+        }
+        else if(annotation.title=="SEX OFFENSE"){
+            annotationView.image=UIImage(named: "sexoffense")
+        }
+        else if(annotation.title=="STALKING"){
+            annotationView.image=UIImage(named: "stalking")
+        }
+        else if(annotation.title=="ARSON"){
+            annotationView.image=UIImage(named: "arson")
+        }
+        //shows user the title and subtitle when they put their finger on the crime image
         annotationView.canShowCallout = true
+        //format the viewing of title and subtitle
         let paragraph = UILabel()
         paragraph.numberOfLines=0
         
