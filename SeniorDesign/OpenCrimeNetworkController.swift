@@ -32,7 +32,7 @@ var a: Int = 1
 
 class OpenCrimeNetworkController{
     func apiAccess(){
-        guard let url = URL(string: "https://data.cityofchicago.org/resource/6zsd-86xi.json") else {return}
+        guard let url = URL(string: "https://data.cityofchicago.org/resource/3uz7-d32j.json") else {return}
         let task = URLSession.shared.dataTask(with: url) { (data, response, error) in
             //check error
             //check ok status 200
@@ -52,12 +52,11 @@ class OpenCrimeNetworkController{
                 }
                 
                 for dic in jsonArray{
-                   
                     var lati: Double
                     var long: Double
                     var check = 1
                     //the guard lets help us make sure each set of data has the necessary variables otherwise we skip the variable
-                    guard let primaryType = dic["primary_type"] as? String else{
+                    guard let primaryType = dic["_primary_decsription"] as? String else{
                         check = 0
                         continue
                     }
@@ -70,15 +69,11 @@ class OpenCrimeNetworkController{
                         continue
                     }
                     
-                    guard let date = dic["date"] as? String else{
+                    guard let date = dic["date_of_occurrence"] as? String else{
                         check = 0
                         continue
                     }
                     
-                    guard let year = dic["year"] as? String else{
-                        check = 0
-                        continue
-                    }
                     if primaryType == "CRIMINAL TRESPASS"{
                         check = 0
                     }
@@ -97,9 +92,7 @@ class OpenCrimeNetworkController{
                     if primaryType == "INTERFERENCE WITH PUBLIC OFFICER"{
                         check = 0
                     }
-                    if primaryType == "NON-CRIMINAL"{
-                        check = 0
-                    }
+
                     if primaryType == "GAMBLING"{
                         check = 0
                     }
@@ -118,11 +111,8 @@ class OpenCrimeNetworkController{
                     if primaryType == "OTHER OFFENSE"{
                         check = 0
                     }
-                    let year2 = (year as NSString).intValue
                     
                     
-                    
-                    if(year2 >= year2-1){
                         if( check == 1){
                             lati = (latitude as NSString).doubleValue
                             long = (longitude as NSString).doubleValue
@@ -132,8 +122,9 @@ class OpenCrimeNetworkController{
                             longarray.append(lati)
                             latiarray.append(long)
                             dates.append(date)
+                            print(lati, " ", long)
                         }
-                    }
+                    
                        // print(jsonResponse)
                 }
             
