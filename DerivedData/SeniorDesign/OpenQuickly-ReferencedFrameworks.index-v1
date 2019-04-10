@@ -3,8 +3,8 @@
 <plist version="1.0">
 <array>
 	<string>Foundation</string>
-	<string>SeniorDesign</string>
 	<string>CoreLocation</string>
+	<string>SeniorDesign</string>
 	<string>MapKit</string>
 	<string>UIKit</string>
 	<string>XCTest</string>

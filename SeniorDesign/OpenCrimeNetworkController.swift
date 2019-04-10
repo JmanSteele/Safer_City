@@ -32,7 +32,7 @@ var a: Int = 1
 
 class OpenCrimeNetworkController{
     func apiAccess(){
-        guard let url = URL(string: "https://data.cityofchicago.org/resource/crimes.json") else {return}
+        guard let url = URL(string: "https://data.cityofchicago.org/resource/6zsd-86xi.json") else {return}
         let task = URLSession.shared.dataTask(with: url) { (data, response, error) in
             //check error
             //check ok status 200

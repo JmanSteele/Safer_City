@@ -15,6 +15,8 @@
 		524A6589224120FF00F5FE31 /* SeniorDesignTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 524A6588224120FF00F5FE31 /* SeniorDesignTests.swift */; };
 		524A6594224120FF00F5FE31 /* SeniorDesignUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 524A6593224120FF00F5FE31 /* SeniorDesignUITests.swift */; };
 		52652375224A988E00D9F2DC /* OpenCrimeNetworkController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52652374224A988D00D9F2DC /* OpenCrimeNetworkController.swift */; };
+		ED66C1B9225AA216001F36EA /* CrimeAnnotations.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED66C1B8225AA216001F36EA /* CrimeAnnotations.swift */; };
+		ED66C1BB225AB37A001F36EA /* CrimePicAnnotations.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED66C1BA225AB37A001F36EA /* CrimePicAnnotations.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		524A6593224120FF00F5FE31 /* SeniorDesignUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeniorDesignUITests.swift; sourceTree = "<group>"; };
 		524A6595224120FF00F5FE31 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		52652374224A988D00D9F2DC /* OpenCrimeNetworkController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OpenCrimeNetworkController.swift; sourceTree = "<group>"; };
+		ED66C1B8225AA216001F36EA /* CrimeAnnotations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrimeAnnotations.swift; sourceTree = "<group>"; };
+		ED66C1BA225AB37A001F36EA /* CrimePicAnnotations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrimePicAnnotations.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +105,8 @@
 			children = (
 				524A6573224120FB00F5FE31 /* AppDelegate.swift */,
 				524A6575224120FB00F5FE31 /* ViewController.swift */,
+				ED66C1B8225AA216001F36EA /* CrimeAnnotations.swift */,
+				ED66C1BA225AB37A001F36EA /* CrimePicAnnotations.swift */,
 				52652374224A988D00D9F2DC /* OpenCrimeNetworkController.swift */,
 				524A6577224120FB00F5FE31 /* Main.storyboard */,
 				524A657A224120FE00F5FE31 /* Assets.xcassets */,
@@ -262,6 +268,8 @@
 				52652375224A988E00D9F2DC /* OpenCrimeNetworkController.swift in Sources */,
 				524A6576224120FB00F5FE31 /* ViewController.swift in Sources */,
 				524A6574224120FB00F5FE31 /* AppDelegate.swift in Sources */,
+				ED66C1B9225AA216001F36EA /* CrimeAnnotations.swift in Sources */,
+				ED66C1BB225AB37A001F36EA /* CrimePicAnnotations.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -199,9 +199,20 @@ SWIFT_CLASS("_TtC12SeniorDesign11AppDelegate")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
+
+SWIFT_CLASS("_TtC12SeniorDesign15CrimeAnnotation")
+@interface CrimeAnnotation : NSObject <MKAnnotation>
+@property (nonatomic) CLLocationCoordinate2D coordinate;
+@property (nonatomic, copy) NSString * _Nullable title;
+@property (nonatomic, copy) NSString * _Nullable subtitle;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_DEPRECATED_MSG("-init is unavailable");
+@end
+
 @class MKMapView;
 @class UILabel;
 @class UIButton;
+@class MKAnnotationView;
 @class NSBundle;
 @class NSCoder;
 
@@ -212,6 +223,7 @@ SWIFT_CLASS("_TtC12SeniorDesign9MapScreen")
 @property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified startButton;
 @property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified Crimes;
 - (void)viewDidLoad;
+- (MKAnnotationView * _Nullable)mapView:(MKMapView * _Nonnull)mapView viewForAnnotation:(id <MKAnnotation> _Nonnull)annotation SWIFT_WARN_UNUSED_RESULT;
 - (IBAction)startButtonTapped:(UIButton * _Nonnull)sender;
 - (IBAction)crimesButtonTapped:(UIButton * _Nonnull)sender;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;

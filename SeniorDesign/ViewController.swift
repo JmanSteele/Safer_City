@@ -14,6 +14,7 @@ class customPin: NSObject, MKAnnotation{
         self.subTitle = subTitle
         self.coordinate = location
     }
+    
 }
 
 
@@ -36,6 +37,7 @@ class MapScreen: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        mapView.delegate = self
         startButton.layer.cornerRadius = startButton.frame.size.height/2
         checkLocationServices()
         //Do any additional setup after laoding the view, typically from a nib
@@ -45,15 +47,52 @@ class MapScreen: UIViewController {
     }
     func crimes(latitude: Double, longitude: Double, Types: String, crimeDates: String){
         //var subtitle: String?
+        
+        //var pin:customPin!
+        
         let robery = CLLocationCoordinate2D(latitude: latitude, longitude: longitude)
-        let pin = customPin(title: Types, subTitle: crimeDates, location: robery)
-        self.mapView.addAnnotation(pin)
+        let crimePin = CrimeAnnotation(coordinate:robery, title:Types, subtitle:crimeDates)
+        mapView.addAnnotation(crimePin)
         self.mapView.delegate = self
+    }
+    func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
+        var annotationView = MKAnnotationView()
+        guard let annotation = annotation as? CrimeAnnotation else {return nil}
+        if let dequedView = mapView.dequeueReusableAnnotationView(withIdentifier: annotation.identifier){
+            annotationView = dequedView
+            
+        } else{ annotationView = MKAnnotationView(annotation: annotation, reuseIdentifier: annotation.identifier)
+            
+        }
+        annotationView.image=UIImage(named: "Thief")
+        annotationView.canShowCallout = true
+        let paragraph = UILabel()
+        paragraph.numberOfLines=0
         
         
-       // self.subtitle = subtitle
+        return annotationView
     }
     
+    //func creatingPinImages(
+    //create pin images for seperate crime
+    /*func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
+     if annotation is MKUserLocation{
+     return nil
+     }
+     var pinCrime: String!
+     let annotationView = MKAnnotationView(annotation: pin, reuseIdentifier: title)
+     
+     switch Types{
+     case ["Theft"]:
+     pinCrime = "Thief"
+     
+     default:
+     break
+     }
+     annotationView.image = UIImage(named: pinCrime)
+     annotationView.canShowCallout = true
+     return annotationView
+     }*/
 
     func setupLocationManager() {
         locationManager.delegate = self
@@ -234,4 +273,24 @@ extension MapScreen: MKMapViewDelegate {
         
         return renderer
     }
+    //func creatingPinImages(
+    //create pin images for seperate crime
+    /*func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
+        if annotation is MKUserLocation{
+            return nil
+        }
+        var pinCrime: String = "Offense Occured"
+        let annotationView = MKAnnotationView(annotation: annotation, reuseIdentifier: "customannotation")
+        
+        switch Types{
+        case ["Theft"]:
+            pinCrime = "Thief"
+            
+        default:
+            break
+        }
+        annotationView.image = UIImage(named: pinCrime)
+        annotationView.canShowCallout = true
+        return annotationView
+    }*/
 }
