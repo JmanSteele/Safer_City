@@ -25,7 +25,7 @@ class MapScreen: UIViewController {
     @IBOutlet weak var addressLabel: UILabel!
     @IBOutlet weak var startButton: UIButton!
     @IBOutlet weak var Crimes: UIButton!
-    
+    var a: Int = 0
  
     
     let locationManager = CLLocationManager()
@@ -68,7 +68,12 @@ class MapScreen: UIViewController {
         }
         //change pins to thief image
         if(annotation.title == "THEFT"){
-            annotationView.image=UIImage(named: "Thief")}
+            //let sub = annotation.subtitle.prefix(4)
+            
+                annotationView.image=UIImage(named: "Thief")
+                
+            
+        }
         else if(annotation.title == "ASSAULT"){
             annotationView.image=UIImage(named: "assaulting")}
         else if(annotation.title == "BATTERY"){
@@ -94,6 +99,37 @@ class MapScreen: UIViewController {
         else if(annotation.title=="ARSON"){
             annotationView.image=UIImage(named: "arson")
         }
+        
+        //fade images
+        if(annotation.title == "THEFT2"){
+            //let sub = annotation.subtitle.prefix(4)
+            annotationView.image=UIImage(named: "Thief")
+        }
+        else if(annotation.title == "ASSAULT2"){
+            annotationView.image=UIImage(named: "assaulting")}
+        else if(annotation.title == "BATTERY2"){
+            annotationView.image=UIImage(named: "battery")}
+        else if(annotation.title=="HOMICIDE2"){
+            annotationView.image=UIImage(named: "homicide")
+        }
+        else if(annotation.title=="ROBBERY2"){
+            annotationView.image=UIImage(named: "robbery")
+        }
+        else if(annotation.title=="OFFENSE INVOLVING CHILDREN2"){
+            annotationView.image=UIImage(named: "offensekids")
+        }
+        else if(annotation.title=="CRIM SEXUAL ASSAULT2"){
+            annotationView.image=UIImage(named: "sexassault")
+        }
+        else if(annotation.title=="SEX OFFENSE2"){
+            annotationView.image=UIImage(named: "sexoffense")
+        }
+        else if(annotation.title=="STALKING2"){
+            annotationView.image=UIImage(named: "stalking")
+        }
+        else if(annotation.title=="ARSON2"){
+            annotationView.image=UIImage(named: "arson")
+        }
         //shows user the title and subtitle when they put their finger on the crime image
         annotationView.canShowCallout = true
         //format the viewing of title and subtitle
@@ -103,27 +139,6 @@ class MapScreen: UIViewController {
         
         return annotationView
     }
-    
-    //func creatingPinImages(
-    //create pin images for seperate crime
-    /*func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
-     if annotation is MKUserLocation{
-     return nil
-     }
-     var pinCrime: String!
-     let annotationView = MKAnnotationView(annotation: pin, reuseIdentifier: title)
-     
-     switch Types{
-     case ["Theft"]:
-     pinCrime = "Thief"
-     
-     default:
-     break
-     }
-     annotationView.image = UIImage(named: pinCrime)
-     annotationView.canShowCallout = true
-     return annotationView
-     }*/
 
     func setupLocationManager() {
         locationManager.delegate = self
@@ -239,9 +254,15 @@ class MapScreen: UIViewController {
     @IBAction func crimesButtonTapped(_ sender: UIButton) {
         var i: Int=0
         for x in longarray{
-            print (x, " ", latiarray[i], Types[i])
+           // print (x, " ", latiarray[i], Types[i])
             
             crimes(latitude: x, longitude: latiarray[i], Types: Types[i], crimeDates: dates[i])
+            i = i+1
+        }
+        for x in longarray{
+            // print (x, " ", latiarray[i], Types[i])
+            
+            crimes(latitude: x, longitude: latiarray2[i], Types: Types2[i], crimeDates: dates2[i])
             i = i+1
         }
     }
@@ -304,24 +325,4 @@ extension MapScreen: MKMapViewDelegate {
         
         return renderer
     }
-    //func creatingPinImages(
-    //create pin images for seperate crime
-    /*func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
-        if annotation is MKUserLocation{
-            return nil
-        }
-        var pinCrime: String = "Offense Occured"
-        let annotationView = MKAnnotationView(annotation: annotation, reuseIdentifier: "customannotation")
-        
-        switch Types{
-        case ["Theft"]:
-            pinCrime = "Thief"
-            
-        default:
-            break
-        }
-        annotationView.image = UIImage(named: pinCrime)
-        annotationView.canShowCallout = true
-        return annotationView
-    }*/
 }

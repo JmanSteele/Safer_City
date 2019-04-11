@@ -28,6 +28,10 @@ var longarray: [Double] = []
 var latiarray: [Double] = []
 var Types: [String] = []
 var dates: [String] = []
+var longarray2: [Double] = []
+var latiarray2: [Double] = []
+var Types2: [String] = []
+var dates2: [String] = []
 var a: Int = 1
 
 class OpenCrimeNetworkController{
@@ -123,6 +127,7 @@ class OpenCrimeNetworkController{
                             latiarray.append(long)
                             dates.append(date)
                             print(date)
+                            
                         }
                     
                        // print(jsonResponse)
@@ -221,11 +226,11 @@ class OpenCrimeNetworkController{
                         lati = (latitude as NSString).doubleValue
                         long = (longitude as NSString).doubleValue
                         
-                        
-                        Types.append(primaryType)
-                        longarray.append(lati)
-                        latiarray.append(long)
-                        dates.append(date)
+                        let primaryType = primaryType + "2"
+                        Types2.append(primaryType)
+                        longarray2.append(lati)
+                        latiarray2.append(long)
+                        dates2.append(date)
                         print(date)
                     }
                     
