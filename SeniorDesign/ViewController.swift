@@ -278,21 +278,29 @@ class MapScreen: UIViewController {
     }
     
     @IBAction func crimesButtonTapped(_ sender: UIButton) {
-        bool = true
-        var i: Int=0
-        for x in longarray{
-           // print (x, " ", latiarray[i], Types[i])
-            
-            crimes(latitude: x, longitude: latiarray[i], Types: Types[i], crimeDates: dates[i])
-            i = i+1
+        if(bool == true){
+            mapView.removeAnnotations(mapView.annotations)
+            bool = false
         }
-        i=0
-        for x in longarray2{
-            // print (x, " ", latiarray[i], Types[i])
-            
-            crimes(latitude: x, longitude: latiarray2[i], Types: Types2[i], crimeDates: dates2[i])
-            i = i+1
+        
+        else if(bool == false){
+            var i: Int=0
+            for x in longarray{
+               // print (x, " ", latiarray[i], Types[i])
+                
+                crimes(latitude: x, longitude: latiarray[i], Types: Types[i], crimeDates: dates[i])
+                i = i+1
+            }
+            i=0
+            for x in longarray2{
+                // print (x, " ", latiarray[i], Types[i])
+                
+                crimes(latitude: x, longitude: latiarray2[i], Types: Types2[i], crimeDates: dates2[i])
+                i = i+1
+            }
+            bool = true
         }
+        
     }
     
 }
