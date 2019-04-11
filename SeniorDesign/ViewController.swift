@@ -30,7 +30,7 @@ class MapScreen: UIViewController {
  
     
     let locationManager = CLLocationManager()
-    let regionInMeters: Double = 1000 //SETS UP HOW ZOOMed in we are at start
+    let regionInMeters: Double = 10000 //SETS UP HOW ZOOMed in we are at start
     var previousLocation: CLLocation?
     
     let geoCoder = CLGeocoder()
@@ -71,65 +71,65 @@ class MapScreen: UIViewController {
         if(annotation.title == "THEFT"){
             //let sub = annotation.subtitle.prefix(4)
             
-                annotationView.image=UIImage(named: "Thief")
+                annotationView.image=UIImage(named: "Thieff")
                 
             
         }
         else if(annotation.title == "ASSAULT"){
-            annotationView.image=UIImage(named: "assaulting")}
+            annotationView.image=UIImage(named: "assaultingf")}
         else if(annotation.title == "BATTERY"){
-            annotationView.image=UIImage(named: "battery")}
+            annotationView.image=UIImage(named: "batteryf")}
         else if(annotation.title=="HOMICIDE"){
-            annotationView.image=UIImage(named: "homicide")
+            annotationView.image=UIImage(named: "homicidef")
         }
         else if(annotation.title=="ROBBERY"){
-            annotationView.image=UIImage(named: "robbery")
+            annotationView.image=UIImage(named: "robberyf")
         }
         else if(annotation.title=="OFFENSE INVOLVING CHILDREN"){
-            annotationView.image=UIImage(named: "offensekids")
+            annotationView.image=UIImage(named: "offensekidsf")
         }
         else if(annotation.title=="CRIM SEXUAL ASSAULT"){
-            annotationView.image=UIImage(named: "sexassault")
+            annotationView.image=UIImage(named: "sexassaultf")
         }
         else if(annotation.title=="SEX OFFENSE"){
-            annotationView.image=UIImage(named: "sexoffense")
+            annotationView.image=UIImage(named: "sexoffensef")
         }
         else if(annotation.title=="STALKING"){
-            annotationView.image=UIImage(named: "stalking")
+            annotationView.image=UIImage(named: "stalkingf")
         }
         else if(annotation.title=="ARSON"){
-            annotationView.image=UIImage(named: "arson")
+            annotationView.image=UIImage(named: "arsonf")
         }
         
         //fade images
         if(annotation.title == "THEFT2"){
             //let sub = annotation.subtitle.prefix(4)
-            annotationView.image=UIImage(named: "Thieff")
+            annotationView.image=UIImage(named: "Thief")
         }
         else if(annotation.title == "ASSAULT2"){
-            annotationView.image=UIImage(named: "assaultingf")}
+            annotationView.image=UIImage(named: "assaulting")}
         else if(annotation.title == "BATTERY2"){
-            annotationView.image=UIImage(named: "batteryf")}
+            annotationView.image=UIImage(named: "battery")}
         else if(annotation.title=="HOMICIDE2"){
-            annotationView.image=UIImage(named: "homicidef")
+            annotationView.image=UIImage(named: "homicide")
         }
         else if(annotation.title=="ROBBERY2"){
-            annotationView.image=UIImage(named: "robberyf")
+            annotationView.image=UIImage(named: "robbery")
         }
         else if(annotation.title=="OFFENSE INVOLVING CHILDREN2"){
-            annotationView.image=UIImage(named: "offensekidsf")
+            annotationView.image=UIImage(named: "offensekids")
         }
         else if(annotation.title=="CRIM SEXUAL ASSAULT2"){
-            annotationView.image=UIImage(named: "sexassaultf")
+            annotationView.image=UIImage(named: "sexassault")
         }
         else if(annotation.title=="SEX OFFENSE2"){
-            annotationView.image=UIImage(named: "sexoffensef")
+            annotationView.image=UIImage(named: "sexoffense")
         }
         else if(annotation.title=="STALKING2"){
-            annotationView.image=UIImage(named: "stalkingf")
+            annotationView.image=UIImage(named: "stalking")
         }
         else if(annotation.title=="ARSON2"){
-            annotationView.image=UIImage(named: "arsonf")
+            annotationView.image=UIImage(named: "arson")
         }
         //shows user the title and subtitle when they put their finger on the crime image
         annotationView.canShowCallout = true
@@ -265,7 +265,8 @@ class MapScreen: UIViewController {
             crimes(latitude: x, longitude: latiarray[i], Types: Types[i], crimeDates: dates[i])
             i = i+1
         }
-        for x in longarray{
+        i=0
+        for x in longarray2{
             // print (x, " ", latiarray[i], Types[i])
             
             crimes(latitude: x, longitude: latiarray2[i], Types: Types2[i], crimeDates: dates2[i])
