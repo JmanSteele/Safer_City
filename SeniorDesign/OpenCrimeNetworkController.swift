@@ -126,7 +126,6 @@ class OpenCrimeNetworkController{
                             longarray.append(lati)
                             latiarray.append(long)
                             dates.append(date)
-                            print(date)
                             
                         }
                     
@@ -231,7 +230,6 @@ class OpenCrimeNetworkController{
                         longarray2.append(lati)
                         latiarray2.append(long)
                         dates2.append(date)
-                        print(date)
                     }
                     
                     // print(jsonResponse)

@@ -25,7 +25,8 @@ class MapScreen: UIViewController {
     @IBOutlet weak var addressLabel: UILabel!
     @IBOutlet weak var startButton: UIButton!
     @IBOutlet weak var Crimes: UIButton!
-    var a: Int = 0
+    var userlatitude:  Double = 0
+    var userlongitude: Double = 0
  
     
     let locationManager = CLLocationManager()
@@ -103,32 +104,32 @@ class MapScreen: UIViewController {
         //fade images
         if(annotation.title == "THEFT2"){
             //let sub = annotation.subtitle.prefix(4)
-            annotationView.image=UIImage(named: "Thief")
+            annotationView.image=UIImage(named: "Thieff")
         }
         else if(annotation.title == "ASSAULT2"){
-            annotationView.image=UIImage(named: "assaulting")}
+            annotationView.image=UIImage(named: "assaultingf")}
         else if(annotation.title == "BATTERY2"){
-            annotationView.image=UIImage(named: "battery")}
+            annotationView.image=UIImage(named: "batteryf")}
         else if(annotation.title=="HOMICIDE2"){
-            annotationView.image=UIImage(named: "homicide")
+            annotationView.image=UIImage(named: "homicidef")
         }
         else if(annotation.title=="ROBBERY2"){
-            annotationView.image=UIImage(named: "robbery")
+            annotationView.image=UIImage(named: "robberyf")
         }
         else if(annotation.title=="OFFENSE INVOLVING CHILDREN2"){
-            annotationView.image=UIImage(named: "offensekids")
+            annotationView.image=UIImage(named: "offensekidsf")
         }
         else if(annotation.title=="CRIM SEXUAL ASSAULT2"){
-            annotationView.image=UIImage(named: "sexassault")
+            annotationView.image=UIImage(named: "sexassaultf")
         }
         else if(annotation.title=="SEX OFFENSE2"){
-            annotationView.image=UIImage(named: "sexoffense")
+            annotationView.image=UIImage(named: "sexoffensef")
         }
         else if(annotation.title=="STALKING2"){
-            annotationView.image=UIImage(named: "stalking")
+            annotationView.image=UIImage(named: "stalkingf")
         }
         else if(annotation.title=="ARSON2"){
-            annotationView.image=UIImage(named: "arson")
+            annotationView.image=UIImage(named: "arsonf")
         }
         //shows user the title and subtitle when they put their finger on the crime image
         annotationView.canShowCallout = true
@@ -151,6 +152,8 @@ class MapScreen: UIViewController {
         if let location = locationManager.location?.coordinate {
             let region = MKCoordinateRegion.init(center: location, latitudinalMeters: regionInMeters, longitudinalMeters: regionInMeters)
             mapView.setRegion(region, animated: true)
+            userlatitude = location.latitude
+            userlongitude = location.longitude
         }
     }
     
@@ -231,6 +234,9 @@ class MapScreen: UIViewController {
         let destinationCoordinate = getCenterLocation(for: mapView).coordinate
         let startingLocation = MKPlacemark(coordinate: coordinate) //from my location
         let destination = MKPlacemark(coordinate: destinationCoordinate)
+        
+        print("start: ", userlatitude, ", ", userlongitude)
+        print("end: ", destinationCoordinate.latitude, ", ", destinationCoordinate.longitude)
         
         let request =  MKDirections.Request()
         request.source = MKMapItem(placemark: startingLocation)
