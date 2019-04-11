@@ -1,9 +1,9 @@
 version: "Apple Swift version 4.2.1 (swiftlang-1000.11.42 clang-1000.11.45.1)"
 options: "1452632faaf6d054093df0174f9e4fa0"
-build_time: [1554922249, 551528000]
+build_time: [1554944977, 826106000]
 inputs:
-  "/Users/jesusalmazan/Documents/Safer_City/SeniorDesign/OpenCrimeNetworkController.swift": [1554745681, 0]
-  "/Users/jesusalmazan/Documents/Safer_City/SeniorDesign/ViewController.swift": [1554922249, 0]
+  "/Users/jesusalmazan/Documents/Safer_City/SeniorDesign/OpenCrimeNetworkController.swift": [1554944964, 0]
+  "/Users/jesusalmazan/Documents/Safer_City/SeniorDesign/ViewController.swift": [1554944964, 0]
   "/Users/jesusalmazan/Documents/Safer_City/SeniorDesign/AppDelegate.swift": [1553611380, 0]
-  "/Users/jesusalmazan/Documents/Safer_City/SeniorDesign/CrimeAnnotations.swift": [1554676731, 0]
-  "/Users/jesusalmazan/Documents/Safer_City/SeniorDesign/CrimePicAnnotations.swift": [1554732690, 0]
+  "/Users/jesusalmazan/Documents/Safer_City/SeniorDesign/CrimeAnnotations.swift": [1554944957, 0]
+  "/Users/jesusalmazan/Documents/Safer_City/SeniorDesign/CrimePicAnnotations.swift": [1554944957, 0]

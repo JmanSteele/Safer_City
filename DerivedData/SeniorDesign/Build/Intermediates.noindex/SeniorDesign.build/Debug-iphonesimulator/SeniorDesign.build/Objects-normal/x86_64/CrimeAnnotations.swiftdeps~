@@ -17,6 +17,7 @@ depends-top-level:
 - "NSObject"
 - "String"
 - "StringLiteralType"
+- "UIImage"
 depends-member:
 - ["SK", "init"]
 - ["SK", "init"]
@@ -32,7 +33,9 @@ depends-member:
 - ["SL", "init"]
 - ["12SeniorDesign15CrimeAnnotationC", "CLLocationCoordinate2D"]
 - ["12SeniorDesign15CrimeAnnotationC", "String"]
+- ["12SeniorDesign15CrimeAnnotationC", "UIImage"]
 - ["12SeniorDesign15CrimeAnnotationC", "coordinate"]
+- ["12SeniorDesign15CrimeAnnotationC", "crimePhoto"]
 - ["12SeniorDesign15CrimeAnnotationC", "deinit"]
 - ["12SeniorDesign15CrimeAnnotationC", "identifier"]
 - ["12SeniorDesign15CrimeAnnotationC", "init"]
@@ -86,8 +89,10 @@ depends-member:
 - ["s10MirrorPathP", "init"]
 - ["So8NSObjectC", "CLLocationCoordinate2D"]
 - ["So8NSObjectC", "String"]
+- ["So8NSObjectC", "UIImage"]
 - ["So8NSObjectC", ""]
 - ["So8NSObjectC", "coordinate"]
+- ["So8NSObjectC", "crimePhoto"]
 - ["So8NSObjectC", "identifier"]
 - ["So8NSObjectC", "init"]
 - ["So8NSObjectC", "subtitle"]
@@ -197,4 +202,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/MapKit.framework/Headers/MapKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "a31dcd98b1e70eef41d2b1631e431c99"
+interface-hash: "6094d43e26596a18c48354ce774364a0"

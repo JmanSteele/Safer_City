@@ -5,6 +5,10 @@ provides-top-level:
 - "latiarray"
 - "Types"
 - "dates"
+- "longarray2"
+- "latiarray2"
+- "Types2"
+- "dates2"
 - "a"
 - "OpenCrimeNetworkController"
 provides-nominal:
@@ -15,9 +19,8 @@ provides-member:
 - ["12SeniorDesign26OpenCrimeNetworkControllerC", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- !private "-"
+- !private "+"
 - "=="
-- !private ">="
 - !private "??"
 - "Array"
 - !private "AssignmentPrecedence"
@@ -35,12 +38,17 @@ depends-top-level:
 - "String"
 - !private "StringLiteralType"
 - "Types"
+- "Types2"
 - !private "URL"
 - !private "URLSession"
+- "UnicodeScalarType"
 - "a"
 - "dates"
+- "dates2"
 - "latiarray"
+- "latiarray2"
 - "longarray"
+- "longarray2"
 - !private "print"
 - !private "~="
 depends-member:
@@ -56,7 +64,6 @@ depends-member:
 - !private ["s7CVarArgP", "doubleValue"]
 - !private ["s7CVarArgP", "init"]
 - !private ["s7CVarArgP", "init"]
-- !private ["s7CVarArgP", "intValue"]
 - !private ["s7CVarArgP", "jsonObject"]
 - !private ["s7CVarArgP", "resume"]
 - !private ["s7CVarArgP", "shared"]
@@ -95,7 +102,6 @@ depends-member:
 - !private ["s29CustomPlaygroundQuickLookableP", "doubleValue"]
 - !private ["s29CustomPlaygroundQuickLookableP", "init"]
 - !private ["s29CustomPlaygroundQuickLookableP", "init"]
-- !private ["s29CustomPlaygroundQuickLookableP", "intValue"]
 - !private ["s17CustomReflectableP", "_getBuiltinLogicValue"]
 - !private ["s17CustomReflectableP", "append"]
 - !private ["s17CustomReflectableP", "init"]
@@ -203,15 +209,12 @@ depends-member:
 - !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "doubleValue"]
 - !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
 - !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
-- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "intValue"]
 - !private ["s26ExpressibleByStringLiteralP", "doubleValue"]
 - !private ["s26ExpressibleByStringLiteralP", "init"]
 - !private ["s26ExpressibleByStringLiteralP", "init"]
-- !private ["s26ExpressibleByStringLiteralP", "intValue"]
 - !private ["s33ExpressibleByUnicodeScalarLiteralP", "doubleValue"]
 - !private ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
 - !private ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
-- !private ["s33ExpressibleByUnicodeScalarLiteralP", "intValue"]
 - !private ["SH", ""]
 - !private ["SH", "_getBuiltinLogicValue"]
 - !private ["SH", "append"]
@@ -240,44 +243,40 @@ depends-member:
 - !private ["s10MirrorPathP", "init"]
 - !private ["SM", "append"]
 - !private ["So8NSCodingP", "doubleValue"]
-- !private ["So8NSCodingP", "intValue"]
 - !private ["So9NSCopyingP", "doubleValue"]
-- !private ["So9NSCopyingP", "intValue"]
 - !private ["So9NSCopyingP", "resume"]
 - !private ["So21NSItemProviderReadingP", "doubleValue"]
-- !private ["So21NSItemProviderReadingP", "intValue"]
 - !private ["So21NSItemProviderWritingP", "doubleValue"]
-- !private ["So21NSItemProviderWritingP", "intValue"]
 - !private ["So16NSMutableCopyingP", "doubleValue"]
-- !private ["So16NSMutableCopyingP", "intValue"]
 - !private ["So8NSObjectC", "dataTask"]
 - !private ["So8NSObjectC", "doubleValue"]
-- !private ["So8NSObjectC", "intValue"]
 - !private ["So8NSObjectC", "jsonObject"]
 - !private ["So8NSObjectC", "resume"]
 - !private ["So8NSObjectC", "shared"]
 - !private ["So8NSObjectP", "dataTask"]
 - !private ["So8NSObjectP", "doubleValue"]
-- !private ["So8NSObjectP", "intValue"]
 - !private ["So8NSObjectP", "jsonObject"]
 - !private ["So8NSObjectP", "resume"]
 - !private ["So8NSObjectP", "shared"]
 - !private ["So14NSSecureCodingP", "doubleValue"]
-- !private ["So14NSSecureCodingP", "intValue"]
 - !private ["So8NSStringC", "doubleValue"]
-- !private ["So8NSStringC", "intValue"]
 - !private ["12SeniorDesign26OpenCrimeNetworkControllerC", "Double"]
 - !private ["12SeniorDesign26OpenCrimeNetworkControllerC", "JSONSerialization"]
 - !private ["12SeniorDesign26OpenCrimeNetworkControllerC", "NSString"]
 - !private ["12SeniorDesign26OpenCrimeNetworkControllerC", "String"]
 - !private ["12SeniorDesign26OpenCrimeNetworkControllerC", "Types"]
+- !private ["12SeniorDesign26OpenCrimeNetworkControllerC", "Types2"]
 - !private ["12SeniorDesign26OpenCrimeNetworkControllerC", "URL"]
 - !private ["12SeniorDesign26OpenCrimeNetworkControllerC", "URLSession"]
 - ["12SeniorDesign26OpenCrimeNetworkControllerC", "apiAccess"]
+- ["12SeniorDesign26OpenCrimeNetworkControllerC", "apiAccess2"]
 - !private ["12SeniorDesign26OpenCrimeNetworkControllerC", "dates"]
+- !private ["12SeniorDesign26OpenCrimeNetworkControllerC", "dates2"]
 - ["12SeniorDesign26OpenCrimeNetworkControllerC", "init"]
 - !private ["12SeniorDesign26OpenCrimeNetworkControllerC", "latiarray"]
+- !private ["12SeniorDesign26OpenCrimeNetworkControllerC", "latiarray2"]
 - !private ["12SeniorDesign26OpenCrimeNetworkControllerC", "longarray"]
+- !private ["12SeniorDesign26OpenCrimeNetworkControllerC", "longarray2"]
 - !private ["12SeniorDesign26OpenCrimeNetworkControllerC", "print"]
 - !private ["So19NSProgressReportingP", "resume"]
 - !private ["Sk", "append"]
@@ -317,11 +316,9 @@ depends-member:
 - !private ["s33_ExpressibleByStringInterpolationP", "init"]
 - !private ["s35_HasCustomAnyHashableRepresentationP", "append"]
 - !private ["s35_HasCustomAnyHashableRepresentationP", "doubleValue"]
-- !private ["s35_HasCustomAnyHashableRepresentationP", "intValue"]
 - !private ["s35_HasCustomAnyHashableRepresentationP", "subscript"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "dataTask"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "doubleValue"]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "intValue"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "jsonObject"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "resume"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "shared"]
@@ -431,4 +428,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/MapKit.framework/Headers/MapKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "805f6d1494aa1ca0cb163440d4f3a549"
+interface-hash: "b0444ff0567b3b2db4b277cb0cb4b0f3"
