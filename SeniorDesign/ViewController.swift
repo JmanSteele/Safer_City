@@ -27,7 +27,7 @@ class MapScreen: UIViewController {
     @IBOutlet weak var Crimes: UIButton!
     var userlatitude:  Double = 0
     var userlongitude: Double = 0
- 
+    var bool =  false
     
     let locationManager = CLLocationManager()
     let regionInMeters: Double = 10000 //SETS UP HOW ZOOMed in we are at start
@@ -254,10 +254,31 @@ class MapScreen: UIViewController {
 
     @IBAction func startButtonTapped(_ sender: UIButton) {
         getDirections()
+        if( bool == true){
+            mapView.removeAnnotations(mapView.annotations)
+        }
+        /*
+        var i: Int=0
+        for x in longarray{
+            // print (x, " ", latiarray[i], Types[i])
+            
+            crimes(latitude: x, longitude: latiarray[i], Types: Types[i], crimeDates: dates[i])
+            i = i+1
+        }
+        i=0
+        for x in longarray2{
+            // print (x, " ", latiarray[i], Types[i])
+            
+            crimes(latitude: x, longitude: latiarray2[i], Types: Types2[i], crimeDates: dates2[i])
+            i = i+1
+        }
+    }
+    */
     
     }
     
     @IBAction func crimesButtonTapped(_ sender: UIButton) {
+        bool = true
         var i: Int=0
         for x in longarray{
            // print (x, " ", latiarray[i], Types[i])
