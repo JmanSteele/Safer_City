@@ -6,7 +6,7 @@
 	<integer>9</integer>
 	<key>logs</key>
 	<dict>
-		<key>06F4FFF9-F4A7-4DA6-A487-FA8418DED0A8</key>
+		<key>88FEBE27-613B-472E-BA8B-8BDBCEA261DA</key>
 		<dict>
 			<key>className</key>
 			<string>DBGConsoleLog</string>
@@ -15,7 +15,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
 			<key>fileName</key>
-			<string>06F4FFF9-F4A7-4DA6-A487-FA8418DED0A8.xcactivitylog</string>
+			<string>88FEBE27-613B-472E-BA8B-8BDBCEA261DA.xcactivitylog</string>
 			<key>highLevelStatus</key>
 			<string>S</string>
 			<key>schemeIdentifier-containerName</key>
@@ -27,100 +27,13 @@
 			<key>signature</key>
 			<string>Debug SeniorDesign</string>
 			<key>timeStartedRecording</key>
-			<real>576639481.71695101</real>
+			<real>576639505.04794002</real>
 			<key>timeStoppedRecording</key>
-			<real>576639501.41692901</real>
+			<real>576774282.82678604</real>
 			<key>title</key>
 			<string>Debug SeniorDesign</string>
 			<key>uniqueIdentifier</key>
-			<string>06F4FFF9-F4A7-4DA6-A487-FA8418DED0A8</string>
-		</dict>
-		<key>5FBC9918-C281-4726-91A0-9AD612C85186</key>
-		<dict>
-			<key>className</key>
-			<string>DBGConsoleLog</string>
-			<key>documentTypeString</key>
-			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
-			<key>fileName</key>
-			<string>5FBC9918-C281-4726-91A0-9AD612C85186.xcactivitylog</string>
-			<key>highLevelStatus</key>
-			<string>S</string>
-			<key>schemeIdentifier-containerName</key>
-			<string>SeniorDesign project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>SeniorDesign</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Debug SeniorDesign</string>
-			<key>timeStartedRecording</key>
-			<real>576639301.92351902</real>
-			<key>timeStoppedRecording</key>
-			<real>576639475.74940097</real>
-			<key>title</key>
-			<string>Debug SeniorDesign</string>
-			<key>uniqueIdentifier</key>
-			<string>5FBC9918-C281-4726-91A0-9AD612C85186</string>
-		</dict>
-		<key>F5C5D116-B374-441E-B31E-5DCD85087C3C</key>
-		<dict>
-			<key>className</key>
-			<string>DBGConsoleLog</string>
-			<key>documentTypeString</key>
-			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
-			<key>fileName</key>
-			<string>F5C5D116-B374-441E-B31E-5DCD85087C3C.xcactivitylog</string>
-			<key>highLevelStatus</key>
-			<string>S</string>
-			<key>schemeIdentifier-containerName</key>
-			<string>SeniorDesign project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>SeniorDesign</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Debug SeniorDesign</string>
-			<key>timeStartedRecording</key>
-			<real>576639122.39298701</real>
-			<key>timeStoppedRecording</key>
-			<real>576639294.98855495</real>
-			<key>title</key>
-			<string>Debug SeniorDesign</string>
-			<key>uniqueIdentifier</key>
-			<string>F5C5D116-B374-441E-B31E-5DCD85087C3C</string>
-		</dict>
-		<key>FCD2BEEA-8AC7-49CD-BDE3-955D39633866</key>
-		<dict>
-			<key>className</key>
-			<string>DBGConsoleLog</string>
-			<key>documentTypeString</key>
-			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
-			<key>fileName</key>
-			<string>FCD2BEEA-8AC7-49CD-BDE3-955D39633866.xcactivitylog</string>
-			<key>highLevelStatus</key>
-			<string>S</string>
-			<key>schemeIdentifier-containerName</key>
-			<string>SeniorDesign project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>SeniorDesign</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Debug SeniorDesign</string>
-			<key>timeStartedRecording</key>
-			<real>576626478.67901504</real>
-			<key>timeStoppedRecording</key>
-			<real>576627032.54066002</real>
-			<key>title</key>
-			<string>Debug SeniorDesign</string>
-			<key>uniqueIdentifier</key>
-			<string>FCD2BEEA-8AC7-49CD-BDE3-955D39633866</string>
+			<string>88FEBE27-613B-472E-BA8B-8BDBCEA261DA</string>
 		</dict>
 	</dict>
 </dict>
