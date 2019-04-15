@@ -234,9 +234,11 @@ class MapScreen: UIViewController {
         let destinationCoordinate = getCenterLocation(for: mapView).coordinate
         let startingLocation = MKPlacemark(coordinate: coordinate) //from my location
         let destination = MKPlacemark(coordinate: destinationCoordinate)
-        
+        let x = destinationCoordinate.latitude
+        let y = destinationCoordinate.longitude
         print("start: ", userlatitude, ", ", userlongitude)
-        print("end: ", destinationCoordinate.latitude, ", ", destinationCoordinate.longitude)
+        print("end: ", x, ", ", y)
+        displayRouteCrimes(startlatitude: userlatitude, startlongitude: userlatitude, stoplatitude: x, stoplongitude: y)
         
         let request =  MKDirections.Request()
         request.source = MKMapItem(placemark: startingLocation)
@@ -246,6 +248,23 @@ class MapScreen: UIViewController {
         
         return request
     }
+    func displayRouteCrimes(startlatitude:Double, startlongitude: Double, stoplatitude: Double, stoplongitude: Double){
+        var height: Double = 0.0
+        var width: Double = 0.0
+        
+        height = abs(startlatitude - stoplatitude)
+        width = abs(startlongitude - stoplongitude)
+        
+        var i: Int=0
+        for x in latiarray{
+            // print (x, " ", latiarray[i], Types[i])
+            
+            if(abs(startlatitude - x) <= height && abs(startlongitude - longarray[i]) <= width ){
+                        crimes(latitude: x, longitude: longarray[i], Types: Types[i], crimeDates: dates[i])
+            }
+            i = i+1
+        }
+    }
     func resetMapView(withNew directions: MKDirections) {
         mapView.removeOverlays(mapView.overlays) //refreshs the view, removes existing blue lines
         directionsArray.append(directions)
@@ -253,10 +272,12 @@ class MapScreen: UIViewController {
     }
 
     @IBAction func startButtonTapped(_ sender: UIButton) {
-        getDirections()
         if( bool == true){
             mapView.removeAnnotations(mapView.annotations)
         }
+        
+        getDirections()
+        
         /*
         var i: Int=0
         for x in longarray{
