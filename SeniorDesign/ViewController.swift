@@ -256,14 +256,14 @@ class MapScreen: UIViewController {
         width = abs(startlongitude - stoplongitude)
         
         var i: Int=0
-        for x in latiarray{
+        for x in longarray{
             // print (x, " ", latiarray[i], Types[i])
-            
-            if(abs(startlatitude - x) <= height && abs(startlongitude - longarray[i]) <= width ){
-                        crimes(latitude: x, longitude: longarray[i], Types: Types[i], crimeDates: dates[i])
+            if(abs(startlatitude - x) <= height && abs(latiarray[i] - startlongitude) <= width){
+                    crimes(latitude: x, longitude: latiarray[i], Types: Types[i], crimeDates: dates[i])
+                    i = i+1
             }
-            i = i+1
         }
+        
     }
     func resetMapView(withNew directions: MKDirections) {
         mapView.removeOverlays(mapView.overlays) //refreshs the view, removes existing blue lines
@@ -272,29 +272,12 @@ class MapScreen: UIViewController {
     }
 
     @IBAction func startButtonTapped(_ sender: UIButton) {
-        if( bool == true){
+        if(bool == true){
             mapView.removeAnnotations(mapView.annotations)
         }
         
         getDirections()
-        
-        /*
-        var i: Int=0
-        for x in longarray{
-            // print (x, " ", latiarray[i], Types[i])
-            
-            crimes(latitude: x, longitude: latiarray[i], Types: Types[i], crimeDates: dates[i])
-            i = i+1
-        }
-        i=0
-        for x in longarray2{
-            // print (x, " ", latiarray[i], Types[i])
-            
-            crimes(latitude: x, longitude: latiarray2[i], Types: Types2[i], crimeDates: dates2[i])
-            i = i+1
-        }
-    }
-    */
+    
     
     }
     
