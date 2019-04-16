@@ -256,10 +256,11 @@ class MapScreen: UIViewController {
         width = abs(startlongitude - stoplongitude)
         
         var i: Int=0
-        for x in longarray{
+        for y in longitudearray{
             // print (x, " ", latiarray[i], Types[i])
-            if(abs(startlatitude - x) <= height && abs(latiarray[i] - startlongitude) <= width){
-                    crimes(latitude: x, longitude: latiarray[i], Types: Types[i], crimeDates: dates[i])
+            print("lati: ", latitudearray[i], " long: ", y)
+            if(abs(startlatitude - y) <= height && abs(latitudearray[i] - startlongitude) <= width){
+                    crimes(latitude: latitudearray[i], longitude: y, Types: Types[i], crimeDates: dates[i])
                     i = i+1
             }
         }
@@ -289,17 +290,17 @@ class MapScreen: UIViewController {
         
         else if(bool == false){
             var i: Int=0
-            for x in longarray{
+            for y in longitudearray{
                // print (x, " ", latiarray[i], Types[i])
                 
-                crimes(latitude: x, longitude: latiarray[i], Types: Types[i], crimeDates: dates[i])
+                crimes(latitude: latitudearray[i], longitude: y, Types: Types[i], crimeDates: dates[i])
                 i = i+1
             }
             i=0
-            for x in longarray2{
+            for y in longitudearray2{
                 // print (x, " ", latiarray[i], Types[i])
                 
-                crimes(latitude: x, longitude: latiarray2[i], Types: Types2[i], crimeDates: dates2[i])
+                crimes(latitude: latitudearray2[i], longitude: y, Types: Types2[i], crimeDates: dates2[i])
                 i = i+1
             }
             bool = true

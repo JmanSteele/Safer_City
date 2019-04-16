@@ -24,12 +24,12 @@ struct Description: Decodable {
     let longitude: Double
     let Location: String
 }
-var longarray: [Double] = []
-var latiarray: [Double] = []
+var longitudearray: [Double] = []
+var latitudearray: [Double] = []
 var Types: [String] = []
 var dates: [String] = []
-var longarray2: [Double] = []
-var latiarray2: [Double] = []
+var longitudearray2: [Double] = []
+var latitudearray2: [Double] = []
 var Types2: [String] = []
 var dates2: [String] = []
 var a: Int = 1
@@ -56,8 +56,8 @@ class OpenCrimeNetworkController{
                 }
                 
                 for dic in jsonArray{
-                    var lati: Double
-                    var long: Double
+                    var _latitude: Double
+                    var _longitude: Double
                     var check = 1
                     //the guard lets help us make sure each set of data has the necessary variables otherwise we skip the variable
                     guard let primaryType = dic["_primary_decsription"] as? String else{
@@ -118,13 +118,13 @@ class OpenCrimeNetworkController{
                     
                     
                         if( check == 1){
-                            lati = (latitude as NSString).doubleValue
-                            long = (longitude as NSString).doubleValue
+                            _latitude = (latitude as NSString).doubleValue
+                            _longitude = (longitude as NSString).doubleValue
                             
                         
                             Types.append(primaryType)
-                            longarray.append(lati)
-                            latiarray.append(long)
+                            longitudearray.append(_longitude)
+                            latitudearray.append(_latitude)
                             dates.append(date)
                             
                         }
@@ -160,8 +160,8 @@ class OpenCrimeNetworkController{
                 }
                 
                 for dic in jsonArray{
-                    var lati: Double
-                    var long: Double
+                    var _latitude: Double
+                    var _longitude: Double
                     var check = 1
                     //the guard lets help us make sure each set of data has the necessary variables otherwise we skip the variable
                     guard let primaryType = dic["primary_type"] as? String else{
@@ -222,13 +222,13 @@ class OpenCrimeNetworkController{
                     
                     
                     if( check == 1){
-                        lati = (latitude as NSString).doubleValue
-                        long = (longitude as NSString).doubleValue
+                        _latitude = (latitude as NSString).doubleValue
+                        _longitude = (longitude as NSString).doubleValue
                         
                         let primaryType = primaryType + "2"
                         Types2.append(primaryType)
-                        longarray2.append(lati)
-                        latiarray2.append(long)
+                        longitudearray2.append(_longitude)
+                        latitudearray2.append(_latitude)
                         dates2.append(date)
                     }
                     
