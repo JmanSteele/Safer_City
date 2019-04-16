@@ -260,10 +260,11 @@ class MapScreen: UIViewController {
         
         var i: Int=0
         for y in longitudearray{
-            if(abs(startlatitude - latitudearray[i]) <= height && abs(y - startlongitude) <= width){
+            if(abs(startlatitude - latitudearray[i]) <= height && abs(startlatitude - y) <= width){
                     crimes(latitude: latitudearray[i], longitude: y, Types: Types[i], crimeDates: dates[i])
-                    i = i+1
+                
             }
+            i = i + 1
         }
         
     }
@@ -274,9 +275,8 @@ class MapScreen: UIViewController {
     }
 
     @IBAction func startButtonTapped(_ sender: UIButton) {
-        if(bool == true){
-            mapView.removeAnnotations(mapView.annotations)
-        }
+        mapView.removeAnnotations(mapView.annotations)
+        
         
         getDirections()
     
