@@ -253,13 +253,14 @@ class MapScreen: UIViewController {
         var width: Double = 0.0
         
         height = abs(startlatitude - stoplatitude)
-        width = abs(startlongitude - stoplongitude)
+        width = abs(stoplongitude - startlongitude)
+        
+        print("height: ", height, " width ", width)
+        
         
         var i: Int=0
         for y in longitudearray{
-            // print (x, " ", latiarray[i], Types[i])
-            print("lati: ", latitudearray[i], " long: ", y)
-            if(abs(startlatitude - y) <= height && abs(latitudearray[i] - startlongitude) <= width){
+            if(abs(startlatitude - latitudearray[i]) <= height && abs(y - startlongitude) <= width){
                     crimes(latitude: latitudearray[i], longitude: y, Types: Types[i], crimeDates: dates[i])
                     i = i+1
             }
