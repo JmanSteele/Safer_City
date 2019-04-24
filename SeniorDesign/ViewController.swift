@@ -236,9 +236,9 @@ class MapScreen: UIViewController {
         let destination = MKPlacemark(coordinate: destinationCoordinate)
         let x = destinationCoordinate.latitude
         let y = destinationCoordinate.longitude
-        print("start: ", userlatitude, ", ", userlongitude)
-        print("end: ", x, ", ", y)
-        displayRouteCrimes(startlatitude: userlatitude, startlongitude: userlatitude, stoplatitude: x, stoplongitude: y)
+        //print("start: ", userlatitude, ", ", userlongitude)
+        //print("end: ", x, ", ", y)
+        displayRouteCrimes(startlatitude: userlatitude, startlongitude: userlongitude, stoplatitude: x, stoplongitude: y)
         
         let request =  MKDirections.Request()
         request.source = MKMapItem(placemark: startingLocation)
@@ -249,24 +249,24 @@ class MapScreen: UIViewController {
         return request
     }
     func displayRouteCrimes(startlatitude:Double, startlongitude: Double, stoplatitude: Double, stoplongitude: Double){
-        var height: Double = 0.0
-        var width: Double = 0.0
-        
-        height = abs(startlatitude - stoplatitude)
-        width = abs(stoplongitude - startlongitude)
-        
-        print("height: ", height, " width ", width)
-        
+        let height: Double = abs(startlatitude - stoplatitude)
+        let width: Double = abs(startlongitude - stoplongitude)
         
         var i: Int=0
         for y in longitudearray{
-            if(abs(startlatitude - latitudearray[i]) <= height && abs(startlatitude - y) <= width){
+            if(abs(startlatitude - latitudearray[i]) <= height && abs(startlongitude - y) <= width){
                     crimes(latitude: latitudearray[i], longitude: y, Types: Types[i], crimeDates: dates[i])
-                
             }
             i = i + 1
         }
-        
+        i = 0
+        for y in longitudearray2{
+            if(abs(startlatitude - latitudearray2[i]) <= height && abs(startlongitude - y) <= width){
+                
+                crimes(latitude: latitudearray2[i], longitude: y, Types: Types2[i], crimeDates: dates2[i])
+            }
+            i = i + 1
+        }
     }
     func resetMapView(withNew directions: MKDirections) {
         mapView.removeOverlays(mapView.overlays) //refreshs the view, removes existing blue lines
