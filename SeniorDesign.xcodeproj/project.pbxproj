@@ -105,11 +105,11 @@
 			children = (
 				524A6573224120FB00F5FE31 /* AppDelegate.swift */,
 				524A6575224120FB00F5FE31 /* ViewController.swift */,
+				52652374224A988D00D9F2DC /* OpenCrimeNetworkController.swift */,
 				ED66C1B8225AA216001F36EA /* CrimeAnnotations.swift */,
 				ED66C1BA225AB37A001F36EA /* CrimePicAnnotations.swift */,
-				52652374224A988D00D9F2DC /* OpenCrimeNetworkController.swift */,
-				524A6577224120FB00F5FE31 /* Main.storyboard */,
 				524A657A224120FE00F5FE31 /* Assets.xcassets */,
+				524A6577224120FB00F5FE31 /* Main.storyboard */,
 				524A657C224120FE00F5FE31 /* LaunchScreen.storyboard */,
 				524A657F224120FE00F5FE31 /* Info.plist */,
 			);

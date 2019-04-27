@@ -14,10 +14,7 @@ class customPin: NSObject, MKAnnotation{
         self.subTitle = subTitle
         self.coordinate = location
     }
-    
 }
-
-
 
 class MapScreen: UIViewController {
     
@@ -45,12 +42,10 @@ class MapScreen: UIViewController {
         let open = OpenCrimeNetworkController()
         open.apiAccess()
         open.apiAccess2()
+        police_stations()
         
     }
     func crimes(latitude: Double, longitude: Double, Types: String, crimeDates: String){
-        //var subtitle: String?
-        
-        //var pin:customPin!
         
         let robery = CLLocationCoordinate2D(latitude: latitude, longitude: longitude)
         let crimePin = CrimeAnnotation(coordinate:robery, title:Types, subtitle:crimeDates)
@@ -68,6 +63,10 @@ class MapScreen: UIViewController {
             
         }
         //change pins to thief image
+        if(annotation.title == "police_station"){
+            //let sub = annotation.subtitle.prefix(4)
+            annotationView.image=UIImage(named: "station")
+        }
         if(annotation.title == "THEFT"){
             //let sub = annotation.subtitle.prefix(4)
             
@@ -132,11 +131,11 @@ class MapScreen: UIViewController {
             annotationView.image=UIImage(named: "arson")
         }
         //shows user the title and subtitle when they put their finger on the crime image
+        
         annotationView.canShowCallout = true
         //format the viewing of title and subtitle
         let paragraph = UILabel()
         paragraph.numberOfLines=0
-        
         
         return annotationView
     }
@@ -145,7 +144,6 @@ class MapScreen: UIViewController {
         locationManager.delegate = self
         locationManager.desiredAccuracy = kCLLocationAccuracyBest
     }
-    
     
     func centerViewOnUserLocation() {
         //call function always when we have authorization
@@ -156,7 +154,6 @@ class MapScreen: UIViewController {
             userlongitude = location.longitude
         }
     }
-    
     
     func checkLocationServices() {
         if CLLocationManager.locationServicesEnabled() {
@@ -169,7 +166,6 @@ class MapScreen: UIViewController {
             // ALERT USER to allow services, or app will not work
         }
     }
-    
     
     func checkLocationAuthorization() {
         //Basic authorization start up
@@ -190,7 +186,6 @@ class MapScreen: UIViewController {
             break
         }
     }
-    
     
     func startTackingUserLocation() {
         mapView.showsUserLocation = true //littleBLUEDot
@@ -227,7 +222,6 @@ class MapScreen: UIViewController {
                 self.mapView.setVisibleMapRect(route.polyline.boundingMapRect, animated: true)
             }
         }
-      
     }
 
     func createDirectionsRequest(from coordinate: CLLocationCoordinate2D) -> MKDirections.Request{
@@ -276,16 +270,14 @@ class MapScreen: UIViewController {
 
     @IBAction func startButtonTapped(_ sender: UIButton) {
         mapView.removeAnnotations(mapView.annotations)
-        
-        
+        police_stations()
         getDirections()
-    
-    
     }
     
     @IBAction func crimesButtonTapped(_ sender: UIButton) {
         if(bool == true){
             mapView.removeAnnotations(mapView.annotations)
+            police_stations()
             bool = false
         }
         
@@ -293,7 +285,6 @@ class MapScreen: UIViewController {
             var i: Int=0
             for y in longitudearray{
                // print (x, " ", latiarray[i], Types[i])
-                
                 crimes(latitude: latitudearray[i], longitude: y, Types: Types[i], crimeDates: dates[i])
                 i = i+1
             }
@@ -306,9 +297,32 @@ class MapScreen: UIViewController {
             }
             bool = true
         }
-        
     }
-    
+    func police_stations(){
+        crimes(latitude: 41.8583725929 , longitude: -87.627356171, Types: "police_station", crimeDates:"station ")
+        crimes(latitude: 41.7521368378 , longitude: -87.6442289066, Types: "police_station", crimeDates:"station ")
+        crimes(latitude: 41.8735822883 , longitude: -87.705488126, Types: "police_station", crimeDates:"station ")
+        crimes(latitude: 41.9740944511 , longitude: -87.7661488432, Types: "police_station", crimeDates:"station ")
+        crimes(latitude: 41.9997634842 , longitude: -87.6713242922, Types: "police_station", crimeDates:"station ")
+        crimes(latitude: 41.8018110912 , longitude: -87.6305601801, Types: "police_station", crimeDates:"station")
+        crimes(latitude: 41.7796315359 , longitude: -87.6608870173, Types: "police_station", crimeDates:"station ")
+        crimes(latitude: 41.9186088912 , longitude: -87.765574479, Types: "police_station", crimeDates:"station ")
+        crimes(latitude: 41.8566845327 , longitude: -87.708381958, Types: "police_station", crimeDates:"station ")
+        crimes(latitude: 41.8800834614 , longitude: -87.768199889, Types: "police_station", crimeDates:"station ")
+        crimes(latitude: 41.7664308925 , longitude: -87.6057478606, Types: "police_station", crimeDates:"statio ")
+        crimes(latitude: 41.9474004564 , longitude: -87.651512018, Types: "police_station", crimeDates:"station ")
+        crimes(latitude: 41.8307016873 , longitude: -87.6233953459, Types: "police_station", crimeDates:"station ")
+        crimes(latitude: 41.9211033246 , longitude: -87.6974518223, Types: "police_station", crimeDates:"station ")
+        crimes(latitude: 41.778987189 , longitude: -87.7088638153, Types: "police_station", crimeDates:"station ")
+        crimes(latitude: 41.7079332906 , longitude: -87.5683491228, Types: "police_station", crimeDates:"station ")
+        crimes(latitude: 41.9795495131 , longitude: -87.6928445094, Types: "police_station", crimeDates:"station ")
+        crimes(latitude: 41.9032416531 , longitude: -87.6433521393, Types: "police_station", crimeDates:"station ")
+        crimes(latitude: 41.8629766244 , longitude: -87.6569725149, Types: "police_station", crimeDates:"station")
+        crimes(latitude: 41.8373944311 , longitude: -87.6464077068, Types: "police_station", crimeDates:"station")
+        crimes(latitude: 41.6914347795 , longitude: -87.6685203937, Types: "police_station", crimeDates:"station ")
+        crimes(latitude: 41.6927233639 , longitude: -87.6045058667, Types: "police_station", crimeDates:"station ")
+        crimes(latitude: 41.9660534171 , longitude: -87.728114561, Types: "police_station", crimeDates:"station")
+    } 
 }
 
 extension MapScreen: CLLocationManagerDelegate {
